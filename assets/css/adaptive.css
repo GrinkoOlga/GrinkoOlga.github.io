@@ -1,0 +1,110 @@
+ @media all and (max-width: 990px) {
+    .sale_num>div p:nth-of-type(1){ font-size: 1.8em;  }
+    .cont_info{  height: 600px;}
+    .contacts .map{ height: 350px; }
+    .block_cvetov{ width: 45%;  }
+}
+
+@media all and (max-width: 900px) {
+    .order label,.order .destination label{ font-size: 18px;}
+}
+
+@media all and (max-width: 880px) {
+    .sale_num{  width: 50%; }
+    .sale_num>div p:nth-of-type(1){ font-size: 2em;   }
+    .hits_block,.advantage_block{ width: 40%;}
+    
+    .order label, .order .destination label{width: 95%;  }
+    .order button{  width: 50%; font-size: 20px;    }
+}
+
+@media all and (max-width: 800px) {
+    .footer_social li{ display: block; }
+    .about .cont_left { 
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+    
+    .about .leftMenu>label{
+        -webkit-border-radius:0;
+        border-radius: 0;
+    }
+    .about .cont_centr {  
+        width:95%;
+        float: none;
+    }
+    
+    .order{  background-image: none;   }
+    .cont_info{  height: 450px;}
+    .contacts .map{ height: 200px; }
+    .comanda_block{ height: 200px;  font-size: 1em;  }
+    .menu_trigger_katalog+label{display: block; }
+    .catalog .leftMenu{
+        display: none; 
+        margin-top: -20px;
+        position: absolute; 
+        z-index: 99999; 
+        background-color: white;
+    }
+
+    .catalog .content_catalog{ float: none;  width: 100%;  }
+    .abCall{display:none;  }
+}
+
+
+@media all and (max-width: 665px) {
+    .f_blok{ width: 49.5%;    text-align: center;  }
+    
+    .f_blok li{   text-align:center;}
+    footer{   height: 400px;}
+    .footer_social li{  display: inline-block;  }
+    
+    /*для акции*/
+    .sale .sale_num{
+        width: 90%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*для контакты*/
+    .contacts{font-size:60%;}
+    .contacts{ background: linear-gradient(to bottom,#ABB9C4,#F9E7CE);}
+    .cont_info{ background:none; height:200px;}
+
+    /*для главной*/
+    .hits_block { width: 90%;}
+    .comanda_block{ width: auto; height: 150px; }
+    
+    .block_cvetov{ width: 45%;  margin: auto;  }
+}
+
+@media all and (max-width: 500px) {
+    
+    .order {text-align: center;   }
+    .order input[type="text"], .order .destination input[type="text"],
+    .order .destination input[type="date"], .order textarea,.order select{
+        width: 80%;     
+        margin: 0;  
+    }
+    .order p {    font-size: 26px;    }
+    .order label>span{
+        display: block;
+        width: 95%;
+        text-align: center;
+    }
+    .order form>span{ display: block; font-size: 20px;   }
+}
+
+@media all and (max-width: 415px) {
+    .advantage{ display: none;  }
+    .block_cvetov{ width: 90%; }
+
+    .order label,.order .destination label{  font-size: 16px;   }
+    .order p { font-size: 20px;  }
+    .order form>input+label{width: 100px;}
+    
+    .f_blok{width: 100%;   }
+    footer{ height: 650px;  }
+}

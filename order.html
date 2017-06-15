@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Заказ цветов. Магазин цветов &laquo;Цветы Вам&raquo;</title>
+   
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/adaptive.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+   </head>
+
+ 
+ <body>
+    <header>
+        <div class="logo">
+            <a href="index.html" title="Магазин цветов &laquo;Цветы Вам&raquo;">
+              <img src="assets/img/logo1.png" alt="Магазин цветов &laquo;Цветы Вам&raquo;" title="Магазин цветов &laquo;Цветы Вам&raquo;"></img>
+            </a>
+        </div>
+        <div class="tel"><p>+375 44 <span>123 33 33</span></p>
+                         <p>+375 29 <span>132 22 22</span></p>
+        </div>
+        <p>Нашим цветам всегда рады</p>
+
+        <form>
+          <input type="search" placeholder="Искать здесь...">
+          <button type="submit"></button>
+        </form>
+
+    </header>
+    
+    <nav>
+        <a href="#" class="menu_trigger" title="Меню">Меню</a>
+        <ul class="menu">
+            <li><a href="index.html" title="Перейти на &laquo;Главная&raquo;">Главная</a>
+            <li><a href="katalog.html" title="Перейти на &laquo;Каталог&raquo;">Каталог</a>
+            <li><a href="sale.html" title="Перейти на &laquo;Акции&raquo;">Акции</a>
+            <li><a href="about.html" title="Перейти на &laquo;О магазине&raquo;">О магазине</a>
+            <li><a href="#" title="Перейти на &laquo;Заказ&raquo;">Заказ</a>
+            <li><a href="contacts.html" title="Перейти на &laquo;Контакты&raquo;">Контакты</a>
+        </ul>
+    </nav>
+    
+    <div class="content order">
+        <form action="">
+        
+            <p>Информация о заказчике</p>
+            <label>
+                <span>Ваше имя</span>
+                <input type="text" name="name" value="" placeholder="Иванов">
+            </label>
+            
+            <label>
+                <span>Ваш телефон</span>
+                <input type="text" name="phone" value="" placeholder="+375 44 111 11 11">
+            </label>
+            
+            <label>
+                <span>Ваш E-mail</span>
+                <input type="text" name="email" value="" placeholder="my_mail@mail.ru">
+            </label>
+            
+            <p>Ваш заказ</p>
+            <label>
+                <span>Название букета</span>
+                <input type="text" name="flowers" value="" placeholder="Вдохновение"> 
+            </label>
+            
+            <label>
+                <span>Подарок к букету</span>
+                <select name="gift">
+                    <option value=1>Нет</option>
+                    <option value=2>Конфеты</option>
+                    <option value=3>Воздушные шары</option>
+                    <option value=4>Шампанское</option>
+                    <option value=5>Игрушка</option>
+                </select>
+            </label>
+            
+            <label>
+                <span>Добавить открытку</span>
+                <div><input type="checkbox" value="true" name="card"></div>
+            </label>
+            
+            <label>
+                <span>Текст в открытку:</span>
+                <textarea name="txt_card" value="" placeholder="Уважаемая..."></textarea>
+            </label><br>
+                <br>
+                
+            <span>Доставка:</span>
+
+            <input type="radio" name="deliv" value=1 id="no_del">
+            <label for="no_del">самовывоз</label>
+                    
+            <input type="radio" name="deliv" value=2 checked="checked" id="yes_del">
+            <label for="yes_del">с доставкой</label>
+    
+        
+            <div class="destination">
+                
+                <p>Информация о получателе</p>
+                
+                <label>
+                    <span>ФИО получателя</span>
+                    <input type="text" name="nameDest" value="" placeholder="Петрова Анна Николаевна"> 
+                </label>
+                
+                <label>
+                    <span>Телефон получателя</span>
+                    <input type="text" name="phoneDest" value="" placeholder="+375 44 222 22 22">
+                </label>
+                
+                <label>
+                    <span>Адрес доставки</span>
+                    <input type="text" name="adrDes" value="" placeholder="Минск, пр.Независимости, 110">
+                </label>
+                
+                <label>
+                    <span>Дата доставки</span>
+                    <input type="date" value="2017-06-16" name="dateOrder"/>
+                </label>
+                
+                <label>
+                    <span>Доставить получателю:</span>
+                    <div class="no_fl">
+                        <label for="callY">
+                            <input type="radio" name="deliv_order" value=1 checked="checked" id="callY">
+                            с предварительным звонком
+                        </label>
+                        <label for="callN">
+                            <input type="radio" name="deliv_order" value=2 id="callN">
+                            без звонка
+                        </label>
+                    </div>
+                </label>
+                <label>
+                    <span>Отчет о доставке:</span>
+                    <div class="no_fl">
+                        <label for="nRep">
+                            <input type="radio" name="delivRep" value=1 id="nRep">
+                            нет
+                        </label>
+                        <label for="cRep">
+                            <input type="radio" name="delivRep" value=2 checked="checked" id="cRep">
+                            звонок
+                        </label>
+                        <label for="sRep">
+                            <input type="radio" name="delivRep" value=3 id="sRep">
+                            sms-оповещение
+                        </label>
+                        <label for="fRep">
+                            <input type="radio" name="delivRep" value=4 id="fRep">
+                            фото-отчет
+                        </label>
+                    </div>
+                </label>
+                
+                <label>
+                    <span>Комментарий к заказу:</span>
+                    <textarea name="coment" value=""></textarea>
+                </label>
+            </div>
+            
+            <div class="map">
+                <h2>Наш магазин</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.100003423251!2d27.59656991588617!3d53.92996718010552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf0e0a050edd%3A0x160dd7635c495c52!2z0YPQuy4g0K_QutGD0LHQsCDQmtC-0LvQsNGB0LAgNDIsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1497011360207" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            
+            <button type="submit" name="setOrder">Оформить заказ</button>
+        </form>
+    </div>
+    
+    <footer>
+<div class="footer_menu  f_blok">
+            <div class="footer_title">Информация</div>
+            <div>
+                <ul>
+                    <li><a href="index.html" title="Перейти на &laquo;Главная&raquo;">Главная</a>
+                    <li><a href="katalog.html" title="Перейти на &laquo;Каталог&raquo;">Каталог</a>
+                    <li><a href="sale.html" title="Перейти на &laquo;Акции&raquo;">Акции</a>
+                    <li><a href="about.html" title="Перейти на &laquo;О магазине&raquo;">О магазине</a>
+                    <li><a href="#" title="Перейти на &laquo;Заказ&raquo;">Заказ</a>
+                    <li><a href="contacts.html" title="Перейти на &laquo;Контакты&raquo;">Контакты</a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_contact  f_blok">
+            <div class="footer_title">Контакты</div>
+            <div>
+                <p>г. Минск, ул. Я.Коласа, д.42</p><br>
+                <b>8(044)123-33-33</b><br>
+                <b>8(029)132-22-22</b><br><br>
+                <a href="#" title="Напишите нам">cvetyvam@gmail.com</a>
+            </div>
+        </div>
+                
+        <div class="footer_work  f_blok">
+            <div class="footer_title">Режим работы</div>
+            <div>
+                <p>Без выходных<br>Пн-Вс: 9:00 - 21:00</p><br>
+                <p>Доставка: Пн-Вс: 7:00 - 23:00</p>
+            </div>
+        </div>
+
+        <div class="footer_social f_blok">   
+            <div class="footer_title">Мы в сети</div>
+            <div>
+                <ul>
+                	<li><a href="https://vk.com" title="Вконтакте" target=_blank><div class="vk"></div></a></li>
+                	<li><a href="https://odnoklassniki.ru" title="Одноклассники" target=_blank><div class="odnklsnk"></div></a></li>
+                	<li><a href="https://instagram.com" title="Instagram" target=_blank><div class="instgrm"></div></a></li>
+                </ul>
+            </div>
+        </div> 
+    </footer>
+<script type="text/javascript" src="assets/js/main.js"></script>
+ </body>
+ 
+</html>

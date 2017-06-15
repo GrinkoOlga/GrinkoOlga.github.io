@@ -1,0 +1,196 @@
+header{
+  height: 250px;
+  width: 100%;
+  background: url('../img/header.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+.logo {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  max-width:500px;
+  padding-left: 20px;
+  float: left;
+}
+
+.tel{
+  position: relative;
+  float: left;
+  color:#052C6E;
+}
+
+.tel p span {  font-size:40px; }
+
+.tel p:nth-of-type(1):before{
+  content: url(../img/velcom.png);
+  display: inline-block;
+}
+.tel p:nth-of-type(2):before{
+  content: url(../img/mts.png);
+  display: inline-block;
+}
+
+header>p{
+  position:absolute;
+  margin: 0;
+  top:180px;
+  left:25%;
+  font-family: AMretro;
+  font-size: 4em;
+  color:#056848;
+}
+
+/*форма поиска*/
+header form {
+  position: relative;
+  width: 30%;
+  height: 42px;
+  float: right;
+  top: 10px;
+  right: 10px;
+}
+
+header input {
+  height: 42px;
+  width: 0;
+  padding: 0 42px 0 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  -moz-transition:.4s cubic-bezier(0, 0.8, 0, 1);
+  -o-transition:.4s cubic-bezier(0, 0.8, 0, 1);
+  -ms-transition:.4s cubic-bezier(0, 0.8, 0, 1);
+  -webkit-transition:.4s cubic-bezier(0, 0.8, 0, 1);
+  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  font-size: 1.2em;
+}
+
+header input:focus {
+  width: 100%;
+  z-index: 1;
+  border-bottom: 2px solid #E20048;
+  background: linear-gradient(to right, white, transparent);
+}
+
+header button {
+  background:transparent;
+  border: none;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+header button:before {
+  content: url(../img/search.png);
+  display: block;
+}
+
+/*для верхнего меню*/
+nav{
+  width: 100%;
+  background-color: #1E4D68;
+  text-align: center;
+}
+
+.menu_trigger{
+  font-size: 2em;
+  display: none;
+}
+
+nav li{
+  display: inline-block;
+  width: calc(100% /6);
+  font-size: 2em;
+}
+
+nav a{
+  text-decoration: none;
+  display: block;
+  color:white;
+  padding: 10px 0;
+}
+
+nav a:hover{ background-color:  #E20048; }
+
+
+@media screen and (max-width:990px){
+  nav li{ font-size: 1.5em;  }
+  .tel{
+    float: right;
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width:880px){
+  header>p{  display:none; }
+  header form{
+    right:20px;
+    top:200px;
+    position:absolute;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:800px){
+  nav li{
+    display: block;
+    width: 100%;
+    font-size: 1.2em;
+  }
+  nav a{  border:1px solid #79896D;  }
+  nav ul{  display: none;  }
+  .menu_trigger{ display: block;  }
+}
+
+@media all and (max-width: 665px) {
+  .logo {  
+    width: 90%; 
+    margin:auto;
+    padding:0;
+    float:none;
+  }
+  
+  .logo img{
+    position: relative;
+    max-height: 100%;
+    max-width: 100%;
+    top:50%;
+    -moz-transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .tel{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    padding:0;
+  }
+  
+  .tel p span{font-size: 2em; }
+  
+  .tel p:nth-of-type(1):before{
+    content: '';
+    display: inline-block;
+  }
+  .tel p:nth-of-type(2):before{
+    content: '';
+    display: inline-block;
+  }
+  
+  header form{width: 90%; }
+}

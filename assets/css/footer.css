@@ -1,0 +1,66 @@
+footer{
+    height: 250px;
+    background: #1E4D68;
+    margin-top: 20px;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing: border-box;
+    font-family: Philosopher;
+    display: block;
+    
+}
+
+footer:before{
+    content: '';
+    display: block;
+    height: 12px;
+    background: url(../img/footer.png) repeat-x;
+}
+
+
+.f_blok{
+    position: relative;
+    margin-top: 20px;
+    width: 24.5%;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+.f_blok div:nth-of-type(2){
+    padding: 0 15px;
+    margin-top: 10px;
+}
+
+.footer_title{
+    font-size: 22px;
+    color: white;
+    padding-left: 15px;
+}
+
+footer a{  color: black;}
+
+footer a:hover{  color: white;}
+
+footer ul{   list-style-type: none;}
+
+.footer_social li{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer_social a{
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+}
+
+.vk, .odnklsnk,.instgrm{
+    width: 40px;
+    height: 40px;
+    background:url(../img/social_sprite.png);
+}
+.vk{background-position: -5px -4px;}
+.odnklsnk{    background-position: -5px -77px;}
+.instgrm{    background-position: -5px -40px;}

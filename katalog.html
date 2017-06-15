@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Каталог магазина цветов &laquo;Цветы Вам&raquo;</title>
+   
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/adaptive.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    
+
+ </head>
+
+ <body>
+    <header>
+        <div class="logo">
+            <a href="index.html" title="Магазин цветов &laquo;Цветы Вам&raquo;">
+              <img src="assets/img/logo1.png" alt="Магазин цветов &laquo;Цветы Вам&raquo;" title="Магазин цветов &laquo;Цветы Вам&raquo;"></img>
+            </a>
+        </div>
+        <div class="tel"><p>+375 44 <span>123 33 33</span></p>
+                         <p>+375 29 <span>132 22 22</span></p>
+        </div>
+        <p>Нашим цветам всегда рады</p>
+
+        <form>
+          <input type="search" placeholder="Искать здесь...">
+          <button type="submit"></button>
+        </form>
+
+    </header>
+    
+    <nav>
+        <a href="#" class="menu_trigger" title="Меню">Меню</a>
+        <ul class="menu">
+            <li><a href="index.html" title="Перейти на &laquo;Главная&raquo;">Главная</a>
+            <li><a href="#" title="Перейти на &laquo;Каталог&raquo;">Каталог</a>
+            <li><a href="sale.html" title="Перейти на &laquo;Акции&raquo;">Акции</a>
+            <li><a href="about.html" title="Перейти на &laquo;О магазине&raquo;">О магазине</a>
+            <li><a href="order.html" title="Перейти на &laquo;Заказ&raquo;">Заказ</a>
+            <li><a href="contacts.html" title="Перейти на &laquo;Контакты&raquo;">Контакты</a>
+        </ul>
+    </nav>
+    
+    <div class="content catalog">
+        
+        <input type="radio" name="cvr" id="menu_catalog_bukety" checked>
+        <input type="radio" name="cvr" id="menu_catalog_srez_cvety">
+        <input type="radio" name="cvr" id="menu_catalog_komn_cvety">
+        <input type="radio" name="cvr" id="menu_catalog_svadeb_cvety">
+        <input type="radio" name="cvr" id="menu_catalog_korz_cvety">
+
+        <input class="sub_catalog" type="radio" name="cv_b" id="catalog_buket_rozy" checked>
+        <input class="sub_catalog" type="radio" name="cv_b" id="catalog_buket_tulp">
+        <input class="sub_catalog" type="radio" name="cv_b" id="catalog_buket_iris">
+        <input class="sub_catalog" type="radio" name="cv_b" id="catalog_buket_gerber">
+        <input class="sub_catalog" type="radio" name="cv_b" id="catalog_buket_hriz">
+        <input class="sub_catalog" type="radio" name="cv_b" id="catalog_buket_pion">
+        
+        <input class="sub_catalog" type="radio" name="cv_s" id="catalog_rozy" checked>
+        <input class="sub_catalog" type="radio" name="cv_s" id="catalog_tulp">
+        <input class="sub_catalog" type="radio" name="cv_s" id="catalog_hriz">
+        <input class="sub_catalog" type="radio" name="cv_s" id="catalog_gerber">
+        <input class="sub_catalog" type="radio" name="cv_s" id="catalog_iris">
+        
+        <input type="checkbox" id="mtk" class="menu_trigger_katalog">
+        <label for="mtk">
+            Каталог
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+        </label>
+        
+        <div class="content_left">
+            <!--боковое меню-->
+            <div class="leftMenu">
+                <label for="menu_catalog_bukety">Букеты</label>
+                <ul class="catalog_bukety">
+                    <li><label for="catalog_buket_rozy">Букеты из роз</label>
+                    <li><label for="catalog_buket_tulp">Букеты из тюльпанов</label>
+                    <li><label for="catalog_buket_iris">Букеты из ирисов</label>
+                    <li><label for="catalog_buket_gerber">Букеты из гербер</label>
+                    <li><label for="catalog_buket_hriz">Букеты из хризантем</label>
+                    <li><label for="catalog_buket_pion">Букеты из пионов<br> и пионообразных роз</label>
+               </ul>
+    
+                <label for="menu_catalog_srez_cvety">Срезанные цветы</label>
+                <ul class="catalog_srez_cvety">
+                            <li><label for="catalog_rozy">Розы</label>
+                            <li><label for="catalog_tulp">Тюльпаны</label>
+                            <li><label for="catalog_hriz">Хризантемы</label>
+                            <li><label for="catalog_gerber">Герберы</label>
+                            <li><label for="catalog_iris">Ирисы</label>
+                </ul>
+                
+                <label for="menu_catalog_svadeb_cvety">Свадебные цветы</label>  
+                <label for="menu_catalog_korz_cvety">Цветы в корзине</label> 
+                <label for="menu_catalog_komn_cvety">Комнатные цветы</label>  
+            </div>
+            <!--блок Заказать звонок-->
+            <div class="abCall">
+                <p>Сложности с выбором?</p>
+                <p>Мы поможем!</p>
+                <p>+375 44 123 11 11</p>
+                <p>+375 29 123 22 22</p>
+                <button>Заказать звонок</button>
+            </div>
+        </div>
+            
+        <!--каталог-->
+        <div class="content_catalog">
+
+            <div class="bukety">
+                <p>Букеты</p>
+                <div class="block_cvetov block_bukety_roz">
+                    <img src="assets/img/katalog/bukety/rozy/karolina.jpg"></img>
+                    <div>Каролина</div>
+                    <div class="cvety_price">50,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                       <p>Красная шикарная роза с чудесным чарующим ароматом &mdash; это не стареющая
+                       и всегда актуальная классика проверенная годами.</p>
+                    </div>                            
+                </div>   
+                
+                <div class="block_cvetov block_bukety_roz">
+                    <img src="assets/img/katalog/bukety/rozy/miledy.jpg"></img>
+                    <div>Миледи</div>
+                    <div class="cvety_price">68,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Возвышенная чистота кустовой розы, нежный аромат ее прекрасных 
+                        лепестков станет идеальным дополнением к романтическому свиданию, 
+                        а также сделает незабываемым утро в жизни вашей самой любимой женщины! </p>
+                    </div>
+                </div> 
+                
+                <div class="block_cvetov block_bukety_roz">
+                    <img src="assets/img/katalog/bukety/rozy/vz_chuvstva.jpg"></img>
+                    <div>Взаимные чувства</div>
+                    <div class="cvety_price">53,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Эти цветы станут приятным и неожиданным сюрпризом, ярким солнечным пятном, 
+                        посреди холодного и серого времени года.</p>
+                    </div>
+                </div> 
+                
+                <div class="block_cvetov block_bukety_roz">
+                    <img src="assets/img/katalog/bukety/rozy/vdohnovenie.jpg"></img>
+                    <div>Вдохновение</div>
+                    <div class="cvety_price">44,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Пленительная симфония белой розы и белой фрезии в букете безоговорочно 
+                        раскроет ваши самые нежные и чистые чувства. Без сомнения это лучший подарок на любой случай жизни!</p>
+                    </div>                            
+                </div>   
+                
+                <div class="block_cvetov block_bukety_roz">
+                    <img src="assets/img/katalog/bukety/rozy/vesen_melodia.jpg"></img>
+                    <div>Весенняя мелодия</div>
+                    <div class="cvety_price">63,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Яркий, красочный и безумно красивый теплотой своих красок букет согреет вас 
+                        и подарит теплоту чувств и эмоций. Сочетание герберы и розы &mdash; яркое и 
+                        противоречивое понравится всем без исключений!</p>
+                    </div>                            
+                </div> 
+                
+                <div class="block_cvetov block_bukety_roz">
+                    <img src="assets/img/katalog/bukety/rozy/otkrovenie.jpg"></img>
+                    <div>Откровение</div>
+                    <div class="cvety_price">47,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Букет из белых роз надолго запомнится получателю. Нежные цветки белой розы 
+                        лучше всего передадут ваши самые светлые и нежные чувства. Букет из белых роз &mdash; 
+                        универсальный, чистый и очень чувственный подарок.</p>
+                    </div>                            
+                </div> 
+        
+                <div class="block_cvetov block_bukety_tulp">
+                    <img src="assets/img/katalog/bukety/tulp/nej_vesny.jpg"></img>
+                    <div>Нежность весны</div>
+                    <div class="cvety_price">41,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                       <p>Трогательные, весенние, нежные и восхитительные тюльпаны &mdash; верный признак приблежающейся весны!
+                       Подарите весеннее настроение своим родным и близким и их улыбки не заставят вас долго ждать! </p>
+                    </div>                            
+                </div>  
+                
+                <div class="block_cvetov block_bukety_tulp">
+                    <img src="assets/img/katalog/bukety/tulp/ves_utro.jpg"></img>
+                    <div>Весеннее утро</div>
+                    <div class="cvety_price">38,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Классический легкий букет из нежных тюльпанов. </p>
+                    </div>
+                </div> 
+                
+                <div class="block_cvetov block_bukety_tulp">
+                    <img src="assets/img/katalog/bukety/tulp/obayanie.jpg"></img>
+                    <div>Обаяние</div>
+                    <div class="cvety_price">50,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Самый весенний, самый свежий и самый прекрасный букет на свете - это букет из восхитительных тюльпанов! 
+                        Волнующий и чарующий, яркий и сказочный - он станет предвестником самого чудесного праздника весны!</p>
+                    </div>
+                </div> 
+                
+                <div class="block_cvetov block_bukety_tulp">
+                    <img src="assets/img/katalog/bukety/tulp/pr_vecher.jpg"></img>
+                    <div>Прекрасный вечер</div>
+                    <div class="cvety_price">48,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Яркие и нежные, милые и трогательные тюльпаны, собранные в простой и в тоже время восхитительный букет. 
+                        Лучший весенний подарок для хорошего настроения.</p>
+                    </div>                            
+                </div>   
+                
+                <div class="block_cvetov block_bukety_tulp">
+                    <img src="assets/img/katalog/bukety/tulp/blajenstvo.jpg"></img>
+                    <div>Блаженство</div>
+                    <div class="cvety_price">32,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Свежий и всегда актуальный букет из нежных весенних тюльпанов.</p>
+                    </div>                            
+                </div> 
+                
+                <div class="block_cvetov block_bukety_tulp">
+                    <img src="assets/img/katalog/bukety/tulp/nejnyi.jpg"></img>
+                    <div>Нежный</div>
+                    <div class="cvety_price">35,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Свежесть и нежность тюльпанов порадуют даже самого требовательного получателя!</p>
+                    </div>                            
+                </div> 
+        
+                <div class="block_cvetov block_bukety_iris">
+                    <img src="assets/img/katalog/bukety/iris/1.jpg"></img>
+                    <div>Небо на двоих</div>
+                    <div class="cvety_price">46,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Букет из ирисов подходит для подарка практически по любому поводу. Он станет источником незабываемых положительных эмоций. 
+                        Этот прекрасный цветок можно дарить любимой женщине, молодой романтичной девушке и даже мужчине.</p>
+                        </div>                            
+                </div>   
+                
+                <div class="block_cvetov block_bukety_iris">
+                    <img src="assets/img/katalog/bukety/iris/2.jpg"></img>
+                    <div>Легкое признание</div>
+                    <div class="cvety_price">67,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Многоцветный насыщенный яркий букет воплощает в себе самые прекрасные чувства и дышит свежестью и любовью дарителя. 
+                        Для утонченных, нежных и легких натур.</p>
+                    </div>
+                </div> 
+                
+                <div class="block_cvetov block_bukety_iris">
+                    <img src="assets/img/katalog/bukety/iris/3.jpg"></img>
+                    <div>Смелая мечта</div>
+                    <div class="cvety_price">53,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Уникальный и роскошный букет дарящий тепло весны и нежность чувств. Такой подарок обворожит своего получателя, покорит даже самое неприступное сердце! 
+                           Порадуйте любимого человека сделайте незабываемый подарок! </p>
+                    </div>
+                </div> 
+                
+                <div class="block_cvetov block_bukety_iris">
+                    <img src="assets/img/katalog/bukety/iris/4.jpg"></img>
+                    <div>Райское утро</div>
+                    <div class="cvety_price">64,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Мечтаете провести вечер в приятной компании за легким и непринужденным разговором чудесным весенним вечером? Этот букет подарит вам такую возможность без лишнего труда,
+                            просто закажите букет у нас в магазине и наслаждайтесь приятным вечером в компании с дорогим вам человеком.
+                        </p>
+                    </div>                            
+                </div>   
+                
+                <div class="block_cvetov block_bukety_iris">
+                    <img src="assets/img/katalog/bukety/iris/5.jpg"></img>
+                    <div>Элегантная фантазия</div>
+                    <div class="cvety_price">58,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Изысканный, нежный букет не может не восхитить своим загадочным видом! Эти цветы можно дарить друзьям и любимым, 
+                        чтобы передать свое тепло, поддержку и хорошее отношение.</p>
+                    </div>                            
+                </div> 
+                
+                <div class="block_cvetov block_bukety_iris">
+                    <img src="assets/img/katalog/bukety/iris/6.jpg"></img>
+                    <div>Морской бриз</div>
+                    <div class="cvety_price">49,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Классическое уже сочетание ярких желтых тюльпанов и сочных фиолетовых ирисов скажет больше всяких слов, 
+                        а свежий аромат букета перенесет вас в мир океанского бриза и подарит мгновения счастья и любви.
+                        Совершите этот смелый поступок и никогда не пожалеете о последствиях! </p>
+                    </div>                            
+                </div> 
+                
+                <div class="block_cvetov block_bukety_gerber">
+                    <img src="assets/img/katalog/bukety/gerber/1.jpg"></img>
+                    <div>Эллада</div>
+                    <div class="cvety_price">51,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                       <p>Яркий букет разноцветных гербер заряжает энергией и теплом. Насыщенные и яркие цвета подарят положительные эмоции и чувство праздника.</p>
+                    </div>                            
+                </div>   
+                
+                <div class="block_cvetov block_bukety_gerber">
+                    <img src="assets/img/katalog/bukety/gerber/2.jpg"></img>
+                    <div>Причуда</div>
+                    <div class="cvety_price">42,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Яркий, солнечный букет станет символом успеха, радости, здоровья и счастья. 
+                        Замечательный подарок для тех, кому вы хотите выразить свои уважение и признательность.</p>
+                    </div>
+                </div> 
+                
+                <div class="block_cvetov block_bukety_gerber">
+                    <img src="assets/img/katalog/bukety/gerber/3.jpg"></img>
+                    <div>Вечерний променад</div>
+                    <div class="cvety_price">47,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Изящный букет из гербер и роз, утопающих в зелени. 
+                        Элегантный и при этом невероятно притягательный букет станет отличным презентом для дорого Вам человека.</p>
+                    </div>
+                </div> 
+                
+                <div class="block_cvetov block_bukety_gerber">
+                    <img src="assets/img/katalog/bukety/gerber/4.jpg"></img>
+                    <div>Сентиментальная поэма</div>
+                    <div class="cvety_price">39,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Сентиментальная поэма &mdash; необычный букет, выполненный в нежных, спокойных, умиротворяющих тонах. </p>
+                    </div>                            
+                </div>   
+                
+                <div class="block_cvetov block_bukety_gerber">
+                    <img src="assets/img/katalog/bukety/gerber/5.jpg"></img>
+                    <div>Империал</div>
+                    <div class="cvety_price">52,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Яркий, красочный и безумно красивый теплотой своих красок букет согреет вас 
+                        и подарит теплоту чувств и эмоций. Сочетание герберы и розы &mdash; яркое и 
+                        противоречивое понравится всем без исключений!</p>
+                    </div>                            
+                </div> 
+                
+                <div class="block_cvetov block_bukety_gerber">
+                    <img src="assets/img/katalog/bukety/gerber/6.jpg"></img>
+                    <div>Огонь страсти</div>
+                    <div class="cvety_price">53,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Яркий, чувственный, «пламенный» букет. Настоящее признание в любви и страсти без слов.</p>
+                    </div>                            
+                </div> 
+        
+                <div class="block_cvetov block_bukety_hriz">
+                    <img src="assets/img/katalog/bukety/hriz/1.jpg"></img>
+                    <div>Очаровательной</div>
+                    <div class="cvety_price">51,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                       <p>Лучистый букет в ярко-розовых тонах будет долго радовать получателя, подойдет для любого праздника. 
+                       Такой подарок не останется незамеченным! </p>
+                    </div>                            
+                </div>  
+                
+                <div class="block_cvetov block_bukety_hriz">
+                    <img src="assets/img/katalog/bukety/hriz/2.jpg"></img>
+                    <div>Ищите женщину</div>
+                    <div class="cvety_price">68,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Букет из белых хризантем &mdash; это всегда наилучший способ выразить Ваши чувства.</p>
+                    </div>
+                </div> 
+                
+                <div class="block_cvetov block_bukety_hriz">
+                    <img src="assets/img/katalog/bukety/hriz/3.jpg"></img>
+                    <div>Обаяние</div>
+                    <div class="cvety_price">53,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Роскошный букет из разноцветных хризантем прекрасно украсит любой праздник, наполнит дом нежными ароматами. 
+                        Хризантемы очень красивые, яркие, праздничные, они будут долго радовать своей красотой.</p>
+                    </div>
+                </div> 
+                
+
+                <div class="block_cvetov block_bukety_pion">
+                    <img src="assets/img/katalog/bukety/pion/1.jpg"></img>
+                    <div>Небо на двоих</div>
+                    <div class="cvety_price">46,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">    </div>                            
+                </div>   
+                
+                <div class="block_cvetov block_bukety_pion">
+                    <img src="assets/img/katalog/bukety/pion/2.jpg"></img>
+                    <div>Легкое признание</div>
+                    <div class="cvety_price">67,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about"></div>
+                </div> 
+                
+                <div class="block_cvetov block_bukety_pion">
+                    <img src="assets/img/katalog/bukety/pion/3.jpg"></img>
+                    <div>Смелая мечта</div>
+                    <div class="cvety_price">53,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about"></div>
+                </div> 
+                
+                <div class="block_cvetov block_bukety_pion">
+                    <img src="assets/img/katalog/bukety/pion/4.jpg"></img>
+                    <div>Райское утро</div>
+                    <div class="cvety_price">64,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about"></div>                            
+                </div>   
+                
+                <div class="block_cvetov block_bukety_pion">
+                    <img src="assets/img/katalog/bukety/pion/5.jpg"></img>
+                    <div>Элегантная фантазия</div>
+                    <div class="cvety_price">58,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about"></div>                            
+                </div> 
+                
+                <div class="block_cvetov block_bukety_pion">
+                    <img src="assets/img/katalog/bukety/pion/6.jpg"></img>
+                    <div>Морской бриз</div>
+                    <div class="cvety_price">49,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about"></div>                            
+                </div> 
+            </div>
+            <div class="srezCv" >
+                <p>Срезанные цветы</p>
+                <div class="block_cvetov block_roz">
+                    <img src="assets/img/katalog/srez_cvety/rozy/1.jpg"></img>
+                    <div>El Toro</div>
+                    <div class="cvety_price">от 2,50 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                    </div>                            
+                </div>   
+                
+                <div class="block_cvetov block_roz">
+                    <img src="assets/img/katalog/srez_cvety/rozy/2.jpg"></img>
+                    <div>Topaz</div>
+                    <div class="cvety_price">от 2,50 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                    </div>
+                </div> 
+                
+                <div class="block_cvetov block_roz">
+                    <img src="assets/img/katalog/srez_cvety/rozy/3.jpg"></img>
+                    <div>Миллениум</div>
+                    <div class="cvety_price">от 2,50 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                    </div>
+                </div> 
+                
+                <div class="block_cvetov block_roz">
+                    <img src="assets/img/katalog/srez_cvety/rozy/4.jpg"></img>
+                    <div>Анастасия</div>
+                    <div class="cvety_price">от 2,50 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                    </div>                            
+                </div>   
+                
+                <div class="block_cvetov block_roz">
+                    <img src="assets/img/katalog/srez_cvety/rozy/5.jpg"></img>
+                    <div>Аква</div>
+                    <div class="cvety_price">от 2,50 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                    </div>                            
+                </div> 
+                
+                <div class="block_cvetov block_roz">
+                    <img src="assets/img/katalog/srez_cvety/rozy/6.jpg"></img>
+                    <div>Red Eagle</div>
+                    <div class="cvety_price">от 2,50 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                    </div>                            
+                </div> 
+        
+            </div>     
+            <div class="komCv" >
+                <p>Комнатные цветы</p>
+                
+            </div> 
+            <div class="svadCv" >
+                <p>Свадебные цветы</p>
+                <div class="block_cvetov">
+                    <img src="assets/img/katalog/svadeb_cvety/1.jpg"></img>
+                    <div>Валери</div>
+                    <div class="cvety_price">76,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">    </div>                            
+                </div>   
+                
+                <div class="block_cvetov">
+                    <img src="assets/img/katalog/svadeb_cvety/2.jpg"></img>
+                    <div>Лира</div>
+                    <div class="cvety_price">87,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about"></div>
+                </div> 
+                
+                <div class="block_cvetov">
+                    <img src="assets/img/katalog/svadeb_cvety/3.jpg"></img>
+                    <div>Музыка цветов</div>
+                    <div class="cvety_price">79,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about"></div>
+                </div> 
+                
+                <div class="block_cvetov">
+                    <img src="assets/img/katalog/svadeb_cvety/4.jpg"></img>
+                    <div>Кинешемка</div>
+                    <div class="cvety_price">84,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about"></div>                            
+                </div>   
+                
+                <div class="block_cvetov">
+                    <img src="assets/img/katalog/svadeb_cvety/5.jpg"></img>
+                    <div>Коралловый рай</div>
+                    <div class="cvety_price">88,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about"></div>                            
+                </div> 
+                
+                <div class="block_cvetov">
+                    <img src="assets/img/katalog/svadeb_cvety/6.jpg"></img>
+                    <div>Загадки любви</div>
+                    <div class="cvety_price">79,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about"></div>                            
+                </div> 
+            </div> 
+            
+            <div class="korzCv" >
+                <p>Цветы в корзине</p>
+                <div class="block_cvetov">
+                    <img src="assets/img/katalog/korzin_cvety/1.jpg"></img>
+                    <div>Татьянин день</div>
+                    <div class="cvety_price">56,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Очаровательная корзина с утонченной композицией из роз, гербер и альстромерий. 
+                        Удивительный подарок, по любому поводу и просто так, не оставит никого равнодушным!</p>    
+                    </div>                            
+                </div>   
+                
+                <div class="block_cvetov">
+                    <img src="assets/img/katalog/korzin_cvety/2.jpg"></img>
+                    <div>Весенний поцелуй</div>
+                    <div class="cvety_price">67,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Незабываемо нежная цветочная корзина покорит самое дерзкое девичье сердце, а для кого-то просто станет невероятной "розовой мечтой". 
+                        Воплащайте мечты своих любимых!</p>
+                    </div>
+                </div> 
+                
+                <div class="block_cvetov">
+                    <img src="assets/img/katalog/korzin_cvety/3.jpg"></img>
+                    <div>Маленькое счастье</div>
+                    <div class="cvety_price">59,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Роскошный букет из разноцветных хризантем в оригинальной корзине прекрасно украсит любой праздник, наполнит дом нежными ароматами. 
+                        Хризантемы очень красивые, яркие, праздничные, они будут долго радовать своей красотой. Эти прекрасные цветы означают радость, 
+                        открытость искренних дружеских чувств, веселье.</p>
+                        </div>
+                </div> 
+                
+                <div class="block_cvetov">
+                    <img src="assets/img/katalog/korzin_cvety/4.jpg"></img>
+                    <div>Хороший день</div>
+                    <div class="cvety_price">64,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Сказочная, очаровательная корзинка в нежно-фиолетовой гамме  &mdash; идеальный подарок для любой женщины. 
+                        Этот букет способен перенести в удивительную цветочную сказку, в которой сбываются все мечты, а любимый всегда рядом.</p>
+                    
+                    </div>                            
+                </div>   
+                
+                <div class="block_cvetov">
+                    <img src="assets/img/katalog/korzin_cvety/5.jpg"></img>
+                    <div>Весенние мечты</div>
+                    <div class="cvety_price">58,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Волшебство весенних цветов слились в очаровательной цветочной корзинке - нежные тюльпаны в сочетании с восхитиельными ирисами 
+                        заставит сердце вашего любимого человека забиться чаще в унисон с весенним ветром.</p>
+                    </div>                            
+                </div> 
+                
+                <div class="block_cvetov">
+                    <img src="assets/img/katalog/korzin_cvety/6.jpg"></img>
+                    <div>Очарование</div>
+                    <div class="cvety_price">69,00 руб.</div>
+                    <button><a href="order.html" target=_blank title="Заказать">Купить</a></button>
+                    <div class="cvety_about">
+                        <p>Очень красивая и нежная композиция, которая станет замечательным подарком как в обычный, 
+                        так и особенный день и останется в памяти получателя ярким и удивительным воспоминанием!</p>
+                    </div>                            
+                </div> 
+            </div> 
+
+                
+        </div>
+            
+        <div style="clear:both;"></div>
+    </div>
+    
+    <footer>
+        <div class="footer_menu  f_blok">
+            <div class="footer_title">Информация</div>
+            <div>
+                <ul>
+                    <li><a href="index.html" title="Перейти на &laquo;Главная&raquo;">Главная</a>
+                    <li><a href="#" title="Перейти на &laquo;Каталог&raquo;">Каталог</a>
+                    <li><a href="sale.html" title="Перейти на &laquo;Акции&raquo;">Акции</a>
+                    <li><a href="about.html" title="Перейти на &laquo;О магазине&raquo;">О магазине</a>
+                    <li><a href="order.html" title="Перейти на &laquo;Заказ&raquo;">Заказ</a>
+                    <li><a href="contacts.html" title="Перейти на &laquo;Контакты&raquo;">Контакты</a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_contact  f_blok">
+            <div class="footer_title">Контакты</div>
+            <div>
+                <p>г. Минск, ул. Я.Коласа, д.42</p><br>
+                <b>8(044)123-33-33</b><br>
+                <b>8(029)132-22-22</b><br><br>
+                <a href="#" title="Напишите нам">cvetyvam@gmail.com</a>
+            </div>
+        </div>
+                
+        <div class="footer_work  f_blok">
+            <div class="footer_title">Режим работы</div>
+            <div>
+                <p>Без выходных<br>Пн-Вс: 9:00 - 21:00</p><br>
+                <p>Доставка: Пн-Вс: 7:00 - 23:00</p>
+            </div>
+        </div>
+
+        <div class="footer_social f_blok">   
+            <div class="footer_title">Мы в сети</div>
+            <div>
+                <ul>
+                	<li><a href="https://vk.com" title="Вконтакте" target=_blank><div class="vk"></div></a></li>
+                	<li><a href="https://odnoklassniki.ru" title="Одноклассники" target=_blank><div class="odnklsnk"></div></a></li>
+                	<li><a href="https://instagram.com" title="Instagram" target=_blank><div class="instgrm"></div></a></li>
+                </ul>
+            </div>
+        </div> 
+    </footer>
+    
+ <script type="text/javascript" src="assets/js/main.js"></script>
+ </body>
+ 
+</html>
