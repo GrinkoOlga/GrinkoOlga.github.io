@@ -108,3 +108,10 @@
     .f_blok{width: 100%;   }
     footer{ height: 650px;  }
 }
+
+ @media all and (min-width: 1800px) {
+ 
+    body{ 
+    margin: auto;
+ }
+}
