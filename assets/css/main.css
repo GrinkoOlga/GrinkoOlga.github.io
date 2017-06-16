@@ -123,6 +123,7 @@ body{
     font-size: 1.5em;
     background: url(../img/fon_order.png) no-repeat;
     background-position: bottom left;
+    
     background-size: contain;
 }
 
