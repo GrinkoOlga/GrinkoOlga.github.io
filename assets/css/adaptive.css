@@ -109,7 +109,7 @@
     footer{ height: 650px;  }
 }
 
- @media all and (min-width: 1800px) {
+ @media all and (min-width: 2200px) {
  
     body{ 
     margin: auto;
